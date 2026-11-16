@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng. Eslam Ramzy | Links</title>
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#141e30">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Eslam Ramzy">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+    
+     * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html, body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: "Cairo", sans-serif;
+        background: linear-gradient(-45deg, #141e30, #243b55, #4ca1af, #2c3e50);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+        color: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        padding-top: max(10px, env(safe-area-inset-top));
+        padding-bottom: max(10px, env(safe-area-inset-bottom));
+      }
+
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+    
+        .glass-panel {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(16, 24, 43, 0.6); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 255, 255, 0.15); 
+            border-radius: 30px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.05), inset 0 0 20px rgba(0, 255, 255, 0.05);
+        }
+
+       
+        .profile-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid transparent;
+            z-index: 2;
+            position: relative;
+        }
+
+     
+        .profile-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -5px; left: -5px; right: -5px; bottom: -5px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00f2fe, #4facfe, #00f2fe);
+            z-index: 1;
+            animation: spin 3s linear infinite;
+            box-shadow: 0 0 20px #00f2fe;
+        }
+        
+        .profile-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 2px; left: 2px; right: 2px; bottom: 2px;
+            background-color: #090a0f;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 800;
+            font-family: 'Rajdhani', 'Cairo', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+        
+        .bio {
+            margin: 8px 0 30px 0;
+            font-size: 15px;
+            color: #8be9fd;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+     
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #fff;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+   
+        .link-youtube { border-color: rgba(255, 0, 0, 0.5); }
+        .link-youtube:hover { box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); background: rgba(255,0,0,0.1); border-color: #ff0000; }
+        .link-youtube .icon { color: #ff0000; }
+
+          .link-whatsapp { border-color: rgba(9, 136, 51, 0.5); }
+        .link-whatsapp:hover { box-shadow: 0 0 20px rgba(6, 214, 16, 0.6); background: rgba(0, 255, 55, 0.1); border-color: #44ff00; }
+        .link-whatsapp .icon { color: #09a613; }
+
+        .link-facebook { border-color: rgba(24, 119, 242, 0.5); }
+        .link-facebook:hover { box-shadow: 0 0 20px rgba(24, 119, 242, 0.6); background: rgba(24,119,242,0.1); border-color: #1877f2; }
+        .link-facebook .icon { color: #1877f2; }
+
+        .link-tiktok { border-color: rgba(250, 0, 254, 0.5); }
+        .link-tiktok:hover { box-shadow: 0 0 20px rgba(203, 0, 254, 0.6); background: rgba(195, 0, 254, 0.1); border-color: #cb00fe; }
+        .link-tiktok .icon { color: #ae00fe; }
+
+        .link-platform { border-color: rgba(162, 0, 255, 0.5); }
+        .link-platform:hover { box-shadow: 0 0 20px rgba(162, 0, 255, 0.6); background: rgba(162,0,255,0.1); border-color: #a200ff; }
+        .link-platform .icon { color: #a200ff; }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+        }
+        .icon {
+            font-size: 24px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover .icon {
+            text-shadow: 0 0 10px currentColor;
+        }
+
+        .card-text {
+            flex-grow: 1;
+            text-align: right; 
+            padding-right: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            font-family: 'Rajdhani', 'Cairo', sans-serif;
+        }
+
+    
+        .code-bg {
+            position: absolute;
+            opacity: 0.03;
+            font-family: monospace;
+            font-size: 80px;
+            font-weight: bold;
+            z-index: 0;
+            top: 20px;
+            right: 20px;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="glass-panel">
+
+        <div class="code-bg">&lt;/&gt;</div>
+
+        <div class="profile-wrapper">
+            <img src="eng.png" alt="Eng. Eslam Ramzy" class="profile-pic">
+        </div>
+
+        <h1>Eng Eslam Ramzy</h1>
+        <p class="bio">جميع المنصات الخاصة بالمهندس إسلام رمزي<br>مدرس مادة البرمجة</p>
+
+        <div class="links-container">
+            
+            <!-- يوتيوب -->
+            <a href="https://youtube.com/@eslamramzy-n2s" class="link-card link-youtube">
+                <i class="fab fa-youtube icon"></i>
+                <span class="card-text">قناة اليوتيوب (YouTube)</span>
+            </a>
+
+               <a href="https://whatsapp.com/channel/0029Vb9p6fy9Gv7YnadxhX2k" class="link-card link-whatsapp">
+                <i class="fab fa-whatsapp icon"></i>
+                <span class="card-text">قناة الواتساب (whatsapp)</span>
+            </a>
+
+            <!-- فيسبوك -->
+            <a href="https://www.facebook.com/profile.php?id=61593751634892&mibextid=wwXIfr&rdid=zePpVrQOU2Qe48pe&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HdtmHXeAH%2F%3Fmibextid%3DwwXIfr#" class="link-card link-facebook">
+                <i class="fab fa-facebook-f icon"></i>
+                <span class="card-text">صفحة الفيسبوك (Facebook)</span>
+            </a>
+
+            <!-- تيك توك -->
+            <a href="https://www.tiktok.com/@eslam.ramzy94" class="link-card link-tiktok">
+                <i class="fab fa-tiktok icon"></i>
+                <span class="card-text">حساب التيك توك (TikTok)</span>
+            </a>
+
+        </div>
+    </div>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+}
+</script>
+</body>
+</html>
